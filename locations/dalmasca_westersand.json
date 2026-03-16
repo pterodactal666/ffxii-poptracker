@@ -215,7 +215,7 @@
         ]
       },
       {
-        "name": "Clan Boss: Earth Tyrant",
+        "name": "Earth Tyrant",
         "map_locations": [
           {
             "map": "dalmasca_westersand",
@@ -225,8 +225,8 @@
         ],
         "sections": [
           {
-            "name": "Clan Boss: Earth Tyrant",
-            "ref": "Main/Clan Hall/Clan Boss: Earth Tyrant"
+            "name": "Defeat Earth Tyrant",
+            "ref": "Main/Dalmasca Westersand/Defeat Earth Tyrant"
           }
         ]
       },
