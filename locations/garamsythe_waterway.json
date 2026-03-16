@@ -287,7 +287,7 @@
         ]
       },
       {
-        "name": "Northern Spur Sluiceway Treasure 6",
+        "name": "North Spur Sluiceway Treasure 6",
         "map_locations": [
           {
             "map": "garamsythe_waterway",
@@ -296,10 +296,10 @@
           }
         ],
         "sections": [
-          // {
-          //   "name": "Northern Spur Sluiceway Treasure 6",
-          //   "ref": "Main/Garamsythe Waterway/Northern Spur Sluiceway Treasure 6"
-          // }
+          {
+            "name": "North Spur Sluiceway Treasure 6",
+            "ref": "Main/Garamsythe Waterway/North Spur Sluiceway Treasure 6"
+          }
         ]
       },
       {
