@@ -179,6 +179,9 @@ function early_balfonheim()
 end
 
 function bhujerba_skyferry()
+	if Tracker:ProviderCountForCode('access_key') > 0 then
+		return AccessibilityLevel.Normal
+	end
 	if Tracker:ProviderCountForCode('bhu_aero') > 0 then
 		if early_balfonheim() or 
 			(Tracker:ProviderCountForCode('bal_aero') > 0 and tchita_uplands() == AccessibilityLevel.Normal and scaled_difficulty(5)) or
@@ -191,6 +194,9 @@ function bhujerba_skyferry()
 end
 
 function archades_skyferry()
+	if Tracker:ProviderCountForCode('access_key') == 3 then
+		return AccessibilityLevel.Normal
+	end
 	if Tracker:ProviderCountForCode('arc_aero') > 0 then
 		if early_balfonheim() or
 			Tracker:ProviderCountForCode('rab_aero') > 0 or
