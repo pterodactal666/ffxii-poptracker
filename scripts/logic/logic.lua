@@ -174,7 +174,7 @@ function early_balfonheim()
 	if Tracker:ProviderCountForCode('bal_aero') > 0 then
 		if Tracker:ProviderCountForCode('nal_aero') > 0 or
 			(Tracker:ProviderCountForCode('bhu_aero') > 0 and (Tracker:ProviderCountForCode('rab_aero') > 0 or has_n_system_access_keys(1))) or
-			(Tracker:ProviderCountForCode('arc_aero') > 0 and (Tracker:ProviderCountForCode('rab_aero') > 0 or has_n_system_access_keys(3))) then
+			(Tracker:ProviderCountForCode('arc_aero') > 0 and Tracker:ProviderCountForCode('rab_aero') > 0) then
 			return AccessibilityLevel.Normal
 		end
 	end
