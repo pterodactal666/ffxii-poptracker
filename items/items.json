@@ -440,19 +440,59 @@
         "codes": "second_board"
     },
     {
-      "name": "Feather of the Flock",
-      "type": "toggle",
-      "codes": "feather_of_the_flock"
+        "name": "Feather of the Flock",
+        "type": "toggle",
+        "codes": "feather_of_the_flock"
     },
     {
-      "name": "Kupo Nuts",
-      "type": "toggle",
-      "codes": "kupo_nuts"
+        "name": "Kupo Nuts",
+        "type": "toggle",
+        "codes": "kupo_nuts"
     },
     {
-      "name": "Progressive Trial Unlock",
-      "type": "consumable",
-      "codes": "prog_trial_unlock",
-      "max_quantity": 10
+        "name": "Progressive Trial Unlock",
+        "type": "consumable",
+        "codes": "prog_trial_unlock",
+        "max_quantity": 10
+    },
+    {
+        "name": "Gysahl Greens",
+        "type": "toggle",
+        "codes": "gysahl_greens"
+    },
+    {
+        "name": "Krakka Greens",
+        "type": "toggle",
+        "codes": "krakka_greens"
+    },
+    {
+        "name": "Tantal Greens",
+        "type": "toggle",
+        "codes": "tantal_greens"
+    },
+    {
+        "name": "Pahsana Greens",
+        "type": "toggle",
+        "codes": "pahsana_greens"
+    },
+    {
+        "name": "Curiel Greens",
+        "type": "toggle",
+        "codes": "curiel_greens"
+    },
+    {
+        "name": "Mimett Greens",
+        "type": "toggle",
+        "codes": "mimett_greens"
+    },
+    {
+        "name": "Reagan Greens",
+        "type": "toggle",
+        "codes": "reagan_greens"
+    },
+    {
+        "name": "Sylkis Greens",
+        "type": "toggle",
+        "codes": "sylkis_greens"
     }
 ]
