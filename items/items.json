@@ -458,41 +458,49 @@
     {
         "name": "Gysahl Greens",
         "type": "toggle",
+        "img": "images/items/debug.png", //TODO: Provide actual image
         "codes": "gysahl_greens"
     },
     {
         "name": "Krakka Greens",
         "type": "toggle",
+        "img": "images/items/debug.png", //TODO: Provide actual image
         "codes": "krakka_greens"
     },
     {
         "name": "Tantal Greens",
         "type": "toggle",
+        "img": "images/items/debug.png", //TODO: Provide actual image
         "codes": "tantal_greens"
     },
     {
         "name": "Pahsana Greens",
         "type": "toggle",
+        "img": "images/items/debug.png", //TODO: Provide actual image
         "codes": "pahsana_greens"
     },
     {
         "name": "Curiel Greens",
         "type": "toggle",
+        "img": "images/items/debug.png", //TODO: Provide actual image
         "codes": "curiel_greens"
     },
     {
         "name": "Mimett Greens",
         "type": "toggle",
+        "img": "images/items/debug.png", //TODO: Provide actual image
         "codes": "mimett_greens"
     },
     {
         "name": "Reagan Greens",
         "type": "toggle",
+        "img": "images/items/debug.png", //TODO: Provide actual image
         "codes": "reagan_greens"
     },
     {
         "name": "Sylkis Greens",
         "type": "toggle",
+        "img": "images/items/debug.png", //TODO: Provide actual image
         "codes": "sylkis_greens"
     }
 ]

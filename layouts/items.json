@@ -134,6 +134,34 @@
           },
           {
             "type": "group",
+            "header": "Chocobo Greens",
+            "content": {
+              "type": "itemgrid",
+              "item_margin": "2, 2",
+              "item_width": 120,
+              "item_height": 44,
+              "rows": [
+                [
+                  "gysahl_greens",
+                  "krakka_greens"
+                ],
+                [
+                  "tantal_greens",
+                  "pahsana_greens"
+                ],
+                [
+                  "curiel_greens",
+                  "mimett_greens"
+                ],
+                [
+                  "reagan_greens",
+                  "sylkis_greens"
+                ],
+              ]
+            }
+          },
+          {
+            "type": "group",
             "header": "Espers",
             "content": {
               "type": "canvas",
