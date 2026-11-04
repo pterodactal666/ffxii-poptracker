@@ -442,16 +442,19 @@
     {
         "name": "Feather of the Flock",
         "type": "toggle",
+        "img": "images/items/debug.png", //TODO: Provide actual image
         "codes": "feather_of_the_flock"
     },
     {
         "name": "Kupo Nuts",
         "type": "toggle",
+        "img": "images/items/debug.png", //TODO: Provide actual image
         "codes": "kupo_nuts"
     },
     {
         "name": "Progressive Trial Unlock",
         "type": "consumable",
+        "img": "images/items/debug.png", //TODO: Provide actual image
         "codes": "prog_trial_unlock",
         "max_quantity": 10
     },
@@ -502,5 +505,12 @@
         "type": "toggle",
         "img": "images/items/debug.png", //TODO: Provide actual image
         "codes": "sylkis_greens"
+    },
+    {
+        "name": "Hunt Club Trophies",
+        "type": "consumable",
+        "img": "images/items/debug.png", //TODO: Provide actual image
+        "codes": "hunt_club_trophies",
+        "max_quantity": 29
     }
 ]

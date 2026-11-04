@@ -34,7 +34,47 @@
           },
           {
             "type": "group",
-            "header": "Key Items",
+            "header": "Story Items",
+            "width": 300,
+            "content": {
+              "type": "itemgrid",
+              "item_margin": "2,2",
+              "item_width": 75,
+              "item_height": 36,
+              "rows": [
+                [
+                  "shadestone",
+                  "sunstone",
+                  "crescent_stone",
+                  "tube_fuse"
+                ],
+                [
+                  "sword_of_the_order",
+                  "brig_key",
+                  "rainstone",
+                  "lentes_tear",
+                  "kupo_nuts"
+                ],
+                [
+                  "soul_ward_key",
+                  "pw_chop",
+                  "sw_chop",
+                  "lab_access_card",
+                  "black_orb"
+                ],
+                [
+                  "dawn_shard",
+                  "goddess_magicite",
+                  "nethicite",
+                  "sword_of_kings",
+                  "treaty_blade"
+                ]
+              ]
+            }
+          },
+          {
+            "type": "group",
+            "header": "Other Key Items",
             "width": 600,
             "content": {
               "type": "itemgrid",
@@ -44,32 +84,19 @@
               "rows": [
                 [
                   "clan_primer",
-                  "shadestone",
-                  "sunstone",
-                  "crescent_stone",
-                  "tube_fuse",
-                  "sword_of_the_order",
-                  "brig_key",
-                  "rainstone",
-                  "lentes_tear",
-                  "soul_ward_key",
-                  "pw_chop"
-                ],
-                [
-                  "sw_chop",
-                  "lab_access_card",
-                  "black_orb",
                   "wind_globe",
                   "windvane",
                   "barheim_key",
                   "stone_of_condemner",
                   "sluice_gate_key",
+                  "anns_letter",
                   "merchants_armband",
                   "pilikas_diary",
-                  "site_3_key"
+                  "site_3_key",
+                  "site_11_key"
                 ],
                 [
-                  "site_11_key",
+                  "feather_of_the_flock",
                   "dragon_scale",
                   "ageworn_key",
                   "fragments",
@@ -78,10 +105,11 @@
                   "med_love",
                   "med_lusterless",
                   "med_might",
-                  "anns_letter",
-                  "cactus_flower"
+                  "shelled_trophy",
+                  "hunt_club_trophies"
                 ],
                 [
+                  "cactus_flower",
                   "broken_key",
                   "errmonea_leaf",
                   "rabbit_tail",
@@ -91,15 +119,7 @@
                   "stolen_articles",
                   "ring_of_light",
                   "serpentwyne",
-                  "viera_rucksack",
-                  "shelled_trophy"
-                ],
-                [
-                  "dawn_shard",
-                  "goddess_magicite",
-                  "nethicite",
-                  "sword_of_kings",
-                  "treaty_blade"
+                  "viera_rucksack"
                 ]
               ]
             }

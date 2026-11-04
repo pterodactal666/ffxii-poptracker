@@ -38,12 +38,18 @@ function goal(n)
     return false
 end
 
-function cerobi_access()	-- Why does this function exist?
-    return tchita_uplands() or aero('bal_aero')
+function cerobi_steppe()
+    if (tchita_uplands() == AccessibilityLevel.Normal and Tracker:ProviderCountForCode('curiel_greens') > 0) or 
+        aero('bal_aero') then
+            return AccessibilityLevel.Normal
+    end
+    if tchita_uplands() == AccessibilityLevel.SequenceBreak and Tracker:ProviderCountForCode('curiel_greens') > 0 then
+        return AccessibilityLevel.SequenceBreak
+    end
 end
 
 function ozmone_plain()
-    return Tracker:ProviderCountForCode('access_key') >= 2 or Tracker:ProviderCountForCode('rainstone') > 0
+    return Tracker:ProviderCountForCode('access_key') >= 1 or Tracker:ProviderCountForCode('rainstone') > 0
 end
 
 function henne_mines()
@@ -95,8 +101,10 @@ function ghis()
 end
 
 function sandseas()
-    if Tracker:ProviderCountForCode('access_key') > 0 or (Tracker:ProviderCountForCode('rainstone') > 0 and scaled_difficulty(3)) or ghis() then
-        return AccessibilityLevel.Normal
+    if Tracker:ProviderCountForCode('access_key') > 0 or 
+        (Tracker:ProviderCountForCode('rainstone') > 0 and scaled_difficulty(3)) or 
+        ghis() then
+            return AccessibilityLevel.Normal
     end
     if Tracker:ProviderCountForCode('rainstone') > 0 then
         return AccessibilityLevel.SequenceBreak
@@ -104,33 +112,56 @@ function sandseas()
 end
 
 function mosphoran_highwaste()
-    -- This is probably incorrect under v7 logic, but we can fix that later
-    return tchita_uplands()
-end
-
-function salikawood()
-    -- This is probably incorrect under v7 logic, but we can fix that later
-    return tchita_uplands()
-end
-
-function tchita_uplands()
     if defeat_bergan() == AccessibilityLevel.Normal or
         (Tracker:ProviderCountForCode('cactus_flower') > 0 and defeat_vossler() == AccessibilityLevel.Normal) or
         earth_tyrant() == AccessibilityLevel.Normal or
-        (Tracker:ProviderCountForCode('soul_ward_key') > 0 and aero('arc_aero') and scaled_difficulty(4)) or
-        (Tracker:ProviderCountForCode('lab_access_card') > 0 and aero('arc_aero') and (Tracker:ProviderCountForCode('pw_chop') >= 3 or Tracker:ProviderCountForCode('sw_chop') > 0) and scaled_difficulty(5)) or
-        cid2() == AccessibilityLevel.Normal or
-		has_n_system_access_keys(3) or
-        (aero('bal_aero') and scaled_difficulty(5)) then
+        (tchita_uplands() == AccessibilityLevel.Normal and Tracker:ProviderCountForCode('kupo_nuts') > 0) or
+		has_n_system_access_keys(2) then
 		    return AccessibilityLevel.Normal
     end
-    if defeat_bergan() == AccessibilityLevel.SequenceBreak  or
-		(Tracker:ProviderCountForCode('cactus_flower') > 0 and defeat_vossler() == AccessibilityLevel.SequenceBreak) or
-		earth_tyrant() == AccessibilityLevel.SequenceBreak or
+    if defeat_bergan() == AccessibilityLevel.SequenceBreak or
+        (Tracker:ProviderCountForCode('cactus_flower') > 0 and defeat_vossler() == AccessibilityLevel.SequenceBreak) or
+        earth_tyrant() == AccessibilityLevel.SequenceBreak or
+        (tchita_uplands() == AccessibilityLevel.SequenceBreak and Tracker:ProviderCountForCode('kupo_nuts') > 0) then
+		    return AccessibilityLevel.SequenceBreak
+    end
+end
+
+function mosphoran_highwaste_upper()
+    if (defeat_bergan() == AccessibilityLevel.Normal and Tracker:ProviderCountForCode('krakka_greens') > 0) or
+        (earth_tyrant() == AccessibilityLevel.Normal and Tracker:ProviderCountForCode('gysahl_greens') > 0) or
+        (mosphoran_highwaste() == AccessibilityLevel.Normal and Tracker:ProviderCountForCode('sylkis_greens') > 0) then
+		    return AccessibilityLevel.Normal
+    end
+    if (defeat_bergan() and Tracker:ProviderCountForCode('krakka_greens') > 0) or
+        (earth_tyrant() and Tracker:ProviderCountForCode('gysahl_greens') > 0) or
+        (mosphoran_highwaste() and Tracker:ProviderCountForCode('sylkis_greens') > 0) then
+		    return AccessibilityLevel.SequenceBreak
+    end
+end
+
+function tchita_uplands()
+    if has_n_system_access_keys(3) or
+        Tracker:ProviderCountForCode('kupo_nuts') > 0 and --if approaching from South West
+            (defeat_bergan() == AccessibilityLevel.Normal or
+            (Tracker:ProviderCountForCode('cactus_flower') > 0 and defeat_vossler() == AccessibilityLevel.Normal) or
+            (earth_tyrant() == AccessibilityLevel.Normal)) or
+        (Tracker:ProviderCountForCode('soul_ward_key') > 0 and aero('arc_aero') and scaled_difficulty(4)) or --if approaching from the North
+        Tracker:ProviderCountForCode('mimett_greens') > 0 and --if approaching from the East
+            ((defeat_cid() == AccessibilityLevel.Normal and scaled_difficulty(5)) or
+            cid2() == AccessibilityLevel.Normal or
+            (aero('bal_aero') and scaled_difficulty(5))) then
+		    return AccessibilityLevel.Normal
+    end
+    if Tracker:ProviderCountForCode('kupo_nuts') > 0 and --if approaching from South West
+            (defeat_bergan() == AccessibilityLevel.SequenceBreak or
+            (Tracker:ProviderCountForCode('cactus_flower') > 0 and defeat_vossler() == AccessibilityLevel.SequenceBreak) or --if approaching from the North
+            (earth_tyrant() == AccessibilityLevel.SequenceBreak)) or
 		(Tracker:ProviderCountForCode('soul_ward_key') > 0 and aero('arc_aero')) or
-        (Tracker:ProviderCountForCode('lab_access_card') > 0 and aero('arc_aero') and (Tracker:ProviderCountForCode('pw_chop') >= 3 or Tracker:ProviderCountForCode('sw_chop') > 0)) or
-        cid2() == AccessibilityLevel.SequenceBreak or
-        aero('bal_aero') then
+        Tracker:ProviderCountForCode('mimett_greens') > 0 and --if approaching from the East
+            (defeat_cid() == AccessibilityLevel.SequenceBreak or
+            cid2() == AccessibilityLevel.SequenceBreak or
+            aero('bal_aero')) then
 			return AccessibilityLevel.SequenceBreak
 	end
 end
@@ -215,5 +246,11 @@ function cid2()
 end
 
 function defeat_cid()
-    return draklor_laboratory() and Tracker:ProviderCountForCode('lab_access_card') > 0
+    if Tracker:ProviderCountForCode('lab_access_card') > 0 then
+        if draklor_laboratory() == AccessibilityLevel.SequenceBreak then
+			return AccessibilityLevel.SequenceBreak
+        elseif draklor_laboratory() then
+            return AccessibilityLevel.Normal
+        end
+    end
 end

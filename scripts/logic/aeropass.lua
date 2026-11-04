@@ -23,8 +23,9 @@ DESTINATION_REQS = {
             (defeat_bergan() or ((Tracker:ProviderCountForCode("cactus_flower") > 0) and defeat_vossler()) or earth_tyrant() or aero(BALFONHEIM))
     end,
     [BALFONHEIM] = function()
-        return defeat_bergan() or ((Tracker:ProviderCountForCode("cactus_flower") > 0) and defeat_vossler()) or
-            earth_tyrant() or (Tracker:ProviderCountForCode(SOUL_WARD_KEY) > 0 and aero(ARCHADES))
+        return Tracker:ProviderCountForCode('curiel_greens') > 0 and Tracker:ProviderCountForCode('kupo_nuts') > 0 and
+            (defeat_bergan() or ((Tracker:ProviderCountForCode("cactus_flower") > 0) and defeat_vossler()) or earth_tyrant()) or 
+            (Tracker:ProviderCountForCode(SOUL_WARD_KEY) > 0 and aero(ARCHADES))
     end
 }
 
@@ -40,8 +41,8 @@ DESTINATION_STRAHL_KEYS_NEEDED = {
     [RABANASTRE] = 1,
     [NALBINA] = 1,
     [BHUJERBA] = 1,
-    [ARCHADES] = 3,
-    [BALFONHEIM] = 3
+    [ARCHADES] = 4,
+    [BALFONHEIM] = 4
 }
 
 function aero(dest, allowStrahl, checked)

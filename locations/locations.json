@@ -223,7 +223,7 @@
           {
             "name": "Grimy Fragment",
             "access_rules": [
-              "^$salikawood,[$scaled_difficulty|5],grimy_filo2"
+              "mosphoran_highwaste,[$scaled_difficulty|5],grimy_filo2"
             ]
           },
           {
@@ -3213,7 +3213,7 @@
       {
         "name": "Jahara",
         "access_rules": [
-          "$ozmone_plain"
+          "^$ozmone_plain"
         ],
         "sections": [
           {
@@ -3297,7 +3297,7 @@
       {
         "name": "Eruyt Village",
         "access_rules": [
-          "$ozmone_plain"
+          "^$ozmone_plain"
         ],
         "sections": [
           {
@@ -5293,7 +5293,7 @@
       {
         "name": "Pharos of Ridorana",
         "access_rules": [
-          "$has_n_system_access_keys|2"
+          "$has_n_system_access_keys|3"
         ],
         "sections": [
           {
@@ -6099,7 +6099,7 @@
       {
         "name": "Pharos of Ridorana Subterra",
         "access_rules": [
-          "$has_n_system_access_keys|2"
+          "$has_n_system_access_keys|3"
         ],
         "sections": [
           {
@@ -6974,7 +6974,7 @@
       {
         "name": "Dalmasca Estersand North",
         "access_rules": [
-          "^$tchita_uplands"
+          "^$mosphoran_highwaste"
         ],
         "sections": [
           {
@@ -7252,7 +7252,7 @@
       {
         "name": "Bhujerba",
         "access_rules": [
-          "^$bhujerba"
+          "aero('bhu_aero')"
         ],
         "sections": [
           {
@@ -7414,7 +7414,7 @@
               "place_hunts"
             ],
             "access_rules": [
-              "^$salikawood,roblon"
+              "^$mosphoran_highwaste,roblon"
             ]
           },
           {
@@ -7423,7 +7423,7 @@
               "place_hunts"
             ],
             "access_rules": [
-              "^$tchita_uplands,goliath"
+              "^$mosphoran_highwaste,goliath"
             ]
           },
           {
@@ -7432,13 +7432,13 @@
               "place_hunts"
             ],
             "access_rules": [
-              "^$tchita_uplands,deathscythe"
+              "^$mosphoran_highwaste,deathscythe"
             ]
           },
           {
             "name": "Jovy Reward",
             "access_rules": [
-              "^$tchita_uplands,atomos,roblon,goliath,deathscythe,carrot"
+              "^$mosphoran_highwaste,atomos,roblon,goliath,deathscythe,carrot"
             ]
           }
         ]
@@ -7446,7 +7446,7 @@
       {
         "name": "Mosphoran Highwaste",
         "access_rules": [
-          "^$tchita_uplands"
+          "^$mosphoran_highwaste"
         ],
         "sections": [
           {
@@ -7835,7 +7835,7 @@
               "place_hunts"
             ],
             "access_rules": [
-              "^$salikawood,braegh"
+              "mosphoran_highwaste,braegh"
             ]
           }
         ]
@@ -7843,7 +7843,7 @@
       {
         "name": "Mosphoran Highwaste Upper",
         "access_rules": [
-          "^$tchita_uplands,[$defeat_bergan]"
+          "^$mosphoran_highwaste_upper"
         ],
         "sections": [
           {
@@ -7917,8 +7917,8 @@
       {
         "name": "Balfonheim",
         "access_rules": [
-          "^$tchita_uplands,[$scaled_difficulty|5]",
-          "^$early_balfonheim"
+          "^$tchita_uplands,[$scaled_difficulty|5],curiel_greens",
+          "$aero|bal_aero"
         ],
         "sections": [
           {
@@ -8012,7 +8012,7 @@
               "place_hunts"
             ],
             "access_rules": [
-              "$has_n_system_access_keys|2,ixion"
+              "$has_n_system_access_keys|3,ixion"
             ]
           },
           {
@@ -8021,7 +8021,7 @@
               "place_hunts"
             ],
             "access_rules": [
-              "$has_n_system_access_keys|2,pylraster"
+              "$has_n_system_access_keys|3,pylraster"
             ]
           },
           {
@@ -8056,7 +8056,7 @@
           {
             "name": "Moonsilver Medallion",
             "access_rules": [
-              "^$salikawood,$archades,[$scaled_difficulty|5],love_rohkenmu"
+              "^$mosphoran_highwaste,$archades,[$scaled_difficulty|5],love_rohkenmu"
             ]
           },
           {
@@ -8246,9 +8246,9 @@
         "access_rules": [
           "$aeroNoStrahl|rab_aero",
           "$aeroNoStrahl|nal_aero",
-          "^$bhujerba_skyferry",
-          "^$archades_skyferry",
-          "$early_balfonheim"
+          "$aeroNoStrahl|bhu_aero",
+          "$aeroNoStrahl|arc_aero",
+          "$aeroNoStrahl|bal_aero"
         ],
         "sections": [
           {
@@ -8458,7 +8458,7 @@
               "place_hunts"
             ],
             "access_rules": [
-              "$has_n_system_access_keys|2,shadowseer"
+              "$has_n_system_access_keys|3,shadowseer"
             ]
           },
           {
@@ -8476,7 +8476,7 @@
               "place_hunts"
             ],
             "access_rules": [
-              "$has_n_system_access_keys|2,yiazmat"
+              "$has_n_system_access_keys|3,yiazmat"
             ]
           },
           {
@@ -8674,7 +8674,7 @@
               "place_clan_boss"
             ],
             "access_rules": [
-              "^$salikawood,[$scaled_difficulty|5],king_bomb"
+              "^$mosphoran_highwaste,[$scaled_difficulty|5],king_bomb"
             ]
           },
           {
@@ -8737,7 +8737,7 @@
               "place_clan_boss"
             ],
             "access_rules": [
-              "$has_n_system_access_keys|2,[$scaled_difficulty|5],hydro"
+              "$has_n_system_access_keys|3,[$scaled_difficulty|5],hydro"
             ]
           },
           {
@@ -8746,7 +8746,7 @@
               "place_clan_boss"
             ],
             "access_rules": [
-              "^$tchita_uplands,humbaba_mistant"
+              "^$mosphoran_highwaste,humbaba_mistant"
             ]
           },
           {
@@ -8755,7 +8755,7 @@
               "place_clan_boss"
             ],
             "access_rules": [
-              "^$tchita_uplands,fury"
+              "^$mosphoran_highwaste,fury"
             ]
           },
           {
@@ -9278,7 +9278,7 @@
           {
             "name": "Dull Fragment",
             "access_rules": [
-              "sluice_gate_key,^$salikawood"
+              "sluice_gate_key,mosphoran_highwaste"
             ]
           },
           {
@@ -12592,7 +12592,7 @@
       {
         "name": "Cerobi Steppe",
         "access_rules": [
-          "^$cerobi_access"
+          "^$cerobi_steppe"
         ],
         "sections": [
           {
@@ -13552,7 +13552,7 @@
       {
         "name": "Nabreus Deadlands",
         "access_rules": [
-          "^$tchita_uplands"
+          "^$mosphoran_highwaste,king_bomb"
         ],
         "sections": [
           {
@@ -13998,7 +13998,7 @@
       {
         "name": "Necrohol of Nabudis",
         "access_rules": [
-          "^$tchita_uplands"
+          "^$mosphoran_highwaste,king_bomb"
         ],
         "sections": [
           {
@@ -16264,7 +16264,7 @@
       {
         "name": "Salikawood NW",
         "access_rules": [
-          "^$tchita_uplands"
+          "^$mosphoran_highwaste,king_bomb"
         ],
         "sections": [
           {
@@ -16282,7 +16282,7 @@
       {
         "name": "Salikawood",
         "access_rules": [
-          "^$tchita_uplands"
+          "^$mosphoran_highwaste"
         ],
         "sections": [
           {
@@ -17993,7 +17993,7 @@
       {
         "name": "Ridorana Cataract",
         "access_rules": [
-          "$has_n_system_access_keys|2"
+          "$has_n_system_access_keys|3"
         ],
         "sections": [
           {
