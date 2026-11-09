@@ -723,7 +723,9 @@
           },
           {
             "name": "Great Cockatrice Escape Complete Terra Reward",
-            "access_rules": []
+            "access_rules": [
+              "feather_of_the_flock,clan_primer"
+            ]
           }
         ]
       },
@@ -3290,7 +3292,9 @@
           },
           {
             "name": "Great Cockatrice Escape Shurry Reward",
-            "access_rules": []
+            "access_rules": [
+              "feather_of_the_flock,clan_primer"
+            ]
           }
         ]
       },
