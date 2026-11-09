@@ -6974,7 +6974,7 @@
           {
             "name": "Great Cockatrice Escape Sassan Reward",
             "access_rules": [
-              "cactus_flower,feather_of_the_flock,clan_primer"
+              "cactus_flower,feather_of_the_flock,clan_primer,^$defeat_vossler"
             ],
             "hosted_item": "cockatrice_escape_sassan"
           }
