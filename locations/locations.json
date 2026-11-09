@@ -18302,39 +18302,57 @@
           },
           {
             "name": "Complete Stage 20 Reward",
-            "access_rules": []
+            "access_rules": [
+              "prog_trial_unlock,[$scaled_difficulty|2]"
+            ]
           },
           {
             "name": "Complete Stage 30 Reward",
-            "access_rules": []
+            "access_rules": [
+              "prog_trial_unlock,[$scaled_difficulty|3]"
+            ]
           },
           {
             "name": "Complete Stage 40 Reward",
-            "access_rules": []
+            "access_rules": [
+              "prog_trial_unlock,[$scaled_difficulty|4]"
+            ]
           },
           {
             "name": "Complete Stage 50 Reward",
-            "access_rules": []
+            "access_rules": [
+              "prog_trial_unlock,[$scaled_difficulty|5]"
+            ]
           },
           {
             "name": "Complete Stage 60 Reward",
-            "access_rules": []
+            "access_rules": [
+              "prog_trial_unlock,[$scaled_difficulty|6]"
+            ]
           },
           {
             "name": "Complete Stage 70 Reward",
-            "access_rules": []
+            "access_rules": [
+              "prog_trial_unlock,[$scaled_difficulty|7]"
+            ]
           },
           {
             "name": "Complete Stage 80 Reward",
-            "access_rules": []
+            "access_rules": [
+              "prog_trial_unlock,[$scaled_difficulty|8]"
+            ]
           },
           {
             "name": "Complete Stage 90 Reward",
-            "access_rules": []
+            "access_rules": [
+              "prog_trial_unlock,[$scaled_difficulty|9]"
+            ]
           },
           {
             "name": "Complete Stage 100 Reward",
-            "access_rules": []
+            "access_rules": [
+              "prog_trial_unlock,[$scaled_difficulty|10]"
+            ]
           }
         ]
       }
