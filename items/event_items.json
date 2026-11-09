@@ -204,5 +204,41 @@
     "codes": "giza_tree_glade",
     "type": "toggle",
     "img": "images/items/tree.png"
+  },
+  {
+    "name": "Cockatrice Escape Chit",
+    "codes": "cockatrice_escape_chit",
+    "type": "toggle",
+    "img": "images/items/target.png"
+  },
+  {
+    "name": "Cockatrice Escape Renn",
+    "codes": "cockatrice_escape_renn",
+    "type": "toggle",
+    "img": "images/items/target.png"
+  },
+  {
+    "name": "Cockatrice Escape Shurry",
+    "codes": "cockatrice_escape_shurry",
+    "type": "toggle",
+    "img": "images/items/target.png"
+  },
+  {
+    "name": "Cockatrice Escape Sassan",
+    "codes": "cockatrice_escape_sassan",
+    "type": "toggle",
+    "img": "images/items/target.png"
+  },
+  {
+    "name": "Cockatrice Escape Agytha",
+    "codes": "cockatrice_escape_agytha",
+    "type": "toggle",
+    "img": "images/items/target.png"
+  },
+  {
+    "name": "Cockatrice Escape Moomer",
+    "codes": "cockatrice_escape_moomer",
+    "type": "toggle",
+    "img": "images/items/target.png"
   }
 ]

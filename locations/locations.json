@@ -235,8 +235,9 @@
           {
             "name": "Great Cockatrice Escape Renn Reward",
             "access_rules": [
-              "feather_of_the_flock,clan_primer"
-            ]
+              "feather_of_the_flock,clan_primer,cockatrice_escape_chit"
+            ],
+            "hosted_item": "cockatrice_escape_renn"
           }
         ]
       },
@@ -724,7 +725,7 @@
           {
             "name": "Great Cockatrice Escape Complete Terra Reward",
             "access_rules": [
-              "feather_of_the_flock,clan_primer"
+              "feather_of_the_flock,clan_primer,cockatrice_escape_chit,cockatrice_escape_renn,cockatrice_escape_shurry,cockatrice_escape_sassan,cockatrice_escape_agytha,cockatrice_escape_moomer"
             ]
           }
         ]
@@ -3294,7 +3295,8 @@
             "name": "Great Cockatrice Escape Shurry Reward",
             "access_rules": [
               "feather_of_the_flock,clan_primer"
-            ]
+            ],
+            "hosted_item": "cockatrice_escape_shurry"
           }
         ]
       },
@@ -3359,7 +3361,8 @@
             "name": "Great Cockatrice Escape Chit Reward",
             "access_rules": [
               "feather_of_the_flock,clan_primer"
-            ]
+            ],
+            "hosted_item": "cockatrice_escape_chit"
           }
         ]
       },
@@ -4755,7 +4758,8 @@
             "name": "Great Cockatrice Escape Agytha Reward",
             "access_rules": [
               "sw_chop,feather_of_the_flock,clan_primer"
-            ]
+            ],
+            "hosted_item": "cockatrice_escape_agytha"
           }
         ]
       },
@@ -6971,7 +6975,8 @@
             "name": "Great Cockatrice Escape Sassan Reward",
             "access_rules": [
               "cactus_flower,feather_of_the_flock,clan_primer"
-            ]
+            ],
+            "hosted_item": "cockatrice_escape_sassan"
           }
         ]
       },
@@ -8038,7 +8043,8 @@
             "name": "Great Cockatrice Escape Moomer Reward",
             "access_rules": [
               "feather_of_the_flock,clan_primer"
-            ]
+            ],
+            "hosted_item": "cockatrice_escape_moomer"
           }
         ]
       },
@@ -10180,7 +10186,7 @@
       {
         "name": "Golmore Jungle NW",
         "access_rules": [
-          "$ozmone_plain"
+          "^$ozmone_plain"
         ],
         "sections": [
           {
