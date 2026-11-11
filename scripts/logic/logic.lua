@@ -53,7 +53,7 @@ function ozmone_plain()
 end
 
 function henne_mines()
-    return ozmone_plain()
+    return ozmone_plain() and Tracker:ProviderCountForCode('tantal_greens')
 end
 
 function paramina_rift()
