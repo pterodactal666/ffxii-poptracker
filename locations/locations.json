@@ -16302,7 +16302,7 @@
               "place_hunts"
             ],
             "access_rules": [
-              "[$scaled_difficulty|4]"
+              "[$scaled_difficulty|4],king_bomb"
             ],
             "hosted_item": "braegh"
           },
