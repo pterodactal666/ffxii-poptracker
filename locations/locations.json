@@ -9288,7 +9288,7 @@
           {
             "name": "Dull Fragment",
             "access_rules": [
-              "sluice_gate_key,mosphoran_highwaste"
+              "sluice_gate_key,^$mosphoran_highwaste"
             ]
           },
           {

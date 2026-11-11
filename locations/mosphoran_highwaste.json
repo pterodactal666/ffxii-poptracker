@@ -310,7 +310,7 @@
           "^$blue"
         ],
         "visibility_rules": [
-          "^$tchita_uplands,[$defeat_bergan],$show_shrine_of_south_wind,shrine_of_south_wind"
+          "^$mosphoran_highwaste_upper"
         ],
         "sections": [
           {
@@ -333,7 +333,7 @@
           "^$blue"
         ],
         "visibility_rules": [
-          "^$tchita_uplands,[$defeat_bergan],$show_shrine_of_northwest_wind"
+          "^$mosphoran_highwaste_upper"
         ],
         "sections": [
           {
