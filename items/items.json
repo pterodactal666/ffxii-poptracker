@@ -69,7 +69,7 @@
         "img": "images/items/access_key.png",
         "codes": "access_key",
         "overlay_background": "#000",
-        "max_quantity": 3
+        "max_quantity": 4
     },
     {
         "name": "Writ of Transit",

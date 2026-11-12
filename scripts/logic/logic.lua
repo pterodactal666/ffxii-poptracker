@@ -57,7 +57,7 @@ function henne_mines()
 end
 
 function paramina_rift()
-    if Tracker:ProviderCountForCode('access_key') >= 2 or
+    if has_n_system_access_keys(2) or
         (ozmone_plain() and Tracker:ProviderCountForCode('lentes_tear') > 0) or
         (henne_mines() and espers_controlled(10) and scaled_difficulty(8)) then
         return AccessibilityLevel.Normal
@@ -101,7 +101,7 @@ function ghis()
 end
 
 function sandseas()
-    if Tracker:ProviderCountForCode('access_key') > 0 or 
+    if has_n_system_access_keys(1) or 
         (Tracker:ProviderCountForCode('rainstone') > 0 and scaled_difficulty(3)) or 
         ghis() then
             return AccessibilityLevel.Normal
@@ -112,11 +112,11 @@ function sandseas()
 end
 
 function mosphoran_highwaste()
-    if defeat_bergan() == AccessibilityLevel.Normal or
+    if has_n_system_access_keys(2) or
+        defeat_bergan() == AccessibilityLevel.Normal or
         (Tracker:ProviderCountForCode('cactus_flower') > 0 and defeat_vossler() == AccessibilityLevel.Normal) or
         earth_tyrant() == AccessibilityLevel.Normal or
-        (tchita_uplands() == AccessibilityLevel.Normal and Tracker:ProviderCountForCode('kupo_nuts') > 0) or
-		has_n_system_access_keys(2) then
+        (tchita_uplands() == AccessibilityLevel.Normal and Tracker:ProviderCountForCode('kupo_nuts') > 0) then
 		    return AccessibilityLevel.Normal
     end
     if defeat_bergan() == AccessibilityLevel.SequenceBreak or
@@ -151,7 +151,7 @@ function tchita_uplands()
             ((defeat_cid() == AccessibilityLevel.Normal and scaled_difficulty(5)) or
             cid2() == AccessibilityLevel.Normal or
             (aero('bal_aero') and scaled_difficulty(5))) then
-		    return AccessibilityLevel.Normal
+		        return AccessibilityLevel.Normal
     end
     if Tracker:ProviderCountForCode('kupo_nuts') > 0 and --if approaching from South West
             (defeat_bergan() == AccessibilityLevel.SequenceBreak or
@@ -162,7 +162,7 @@ function tchita_uplands()
             (defeat_cid() == AccessibilityLevel.SequenceBreak or
             cid2() == AccessibilityLevel.SequenceBreak or
             aero('bal_aero')) then
-			return AccessibilityLevel.SequenceBreak
+			    return AccessibilityLevel.SequenceBreak
 	end
 end
 
